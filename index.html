@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+     <!-- google fonts  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <!-- Tailwind css link -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+         tailwind.config = {
+             theme: {
+                 extend: {
+                     colors: {
+                         clifford: '#da373d',
+                     }
+                 }
+             }
+         }
+     </script>
+</head>
+<body class="h-lvh flex justify-center items-center bg-gray-200">
+    <section class="bg-white rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-5">
+        <div class="text-center" id="captcha-div"> 
+          where
+        </div>
+        <input type="text" id="captcha-Input" class="border border-gray-400 h-9 mt-5 rounded-md">
+        <button class="bg-green-500 rounded-md p-2"  id="button-1">Verify</button>
+    </section>
+    <script src="captcha.js"></script>
+    
+</body>
+</html>
